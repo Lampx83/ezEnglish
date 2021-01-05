@@ -1,0 +1,35 @@
+<resources>
+
+    <!--Two states colors-->
+
+    <color name="mau_pink">#FF4081</color>
+    <color name="mau_pink_light">#ff7da9</color>
+
+    <color name="mau_blue">#0875c3</color>
+    <color name="mau_blue_light">#7cbfff</color>
+
+    <color name="mau_red">#c24444</color>
+    <color name="mau_red_light">#e98d8d</color>
+
+    <color name="mau_trans">#00ffffff</color>
+    <color name="mau_trans_light">#33ffffff</color>
+
+    <!--Other colors-->
+    <color name="mau_green">#00a92f</color>
+    <color name="mau_violet">#9c69ac</color>
+    <color name="mau_peru">#ee832b</color>
+    <color name="mau_orange">#ff930f</color>
+    <color name="mau_holo">#0099cc</color>
+
+    <!--Gray scale-->
+    <color name="mau_black">#000000</color>
+    <color name="mau_darkslategray">#202020</color>
+    <color name="mau_dimgrey">#666666</color>
+    <color name="mau_grey">#999999</color>
+    <color name="mau_silver">#cccccc</color>
+    <color name="mau_silver_light">#eeeeee</color>
+    <color name="mau_white">#ffffff</color>
+
+    <color name="screen_background">#333</color>
+    <color name="display_background">#000</color>
+</resources>

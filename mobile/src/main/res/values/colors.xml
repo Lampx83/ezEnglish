@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Two states colors-->
+    <color name="mau_blue">#0868c3</color>
+    <color name="mau_blue_light">#7cbfff</color>
+
+    <color name="mau_hongnhat">#ffc8db</color>
+    <color name="mau_antam">#30ac50</color>
+    <color name="mau_xam3">#333333</color>
+    <color name="mau_xam9">#999999</color>
+    <color name="mau_xamc">#cccccc</color>
+    <color name="mau_background_light">#e8e8e8</color>
+    <color name="mau_trang">#ffffff</color>
+    <color name="mau_xanhlo">#0868c3</color>
+    <color name="mau_xanhlo_light">#7cbfff</color>
+    <color name="mau_den">#000000</color>
+    <color name="mau_gold">#8e8c00</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="background_window">#FFE5E5E5</color>
+    <color name="mau_bookmark">#ff8200</color>
+    <color name="mau_mastered">#00a92f</color>
+    <color name="mau_unuseful">#666666</color>
+    <color name="mau_wrong">#c24444</color>
+    <color name="mau_header_default">#202020</color>
+    <color name="mau_tabstrip_default">#444444</color>
+    <color name="mau_latest_news">#9c36bd</color>
+    <color name="mau_listview_highlight">#dddddd</color>
+    <color name="andBackground">#EDEEF1</color>
+    <color name="andActionbarBackground">#454545</color>
+    <color name="mau_xam5">#555555</color>
+    <color name="greyText">#A9A9A9</color>
+    <color name="lightBlue">#33B5E5</color>
+    <color name="rowLight">#F7FBF5</color>
+    <color name="rowDark">#F3F4F5</color>
+    <color name="andBackgroundLight">#F7FBF5</color>
+    <color name="andBackgroundDark">#F3F4F5</color>
+    <color name="andBackgroundDarkHighlight">#DCE1E2</color>
+    <color name="andBorder">#CFD2DA</color>
+    <color name="andDivider">#E0E3E9</color>
+    <color name="mau_grey">#999999</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPinkLight">#FFDCE7</color>
+    <color name="display_background">#eee</color>
+    <!--wave:above_wave_color="#FF4081"-->
+    <!--wave:blow_wave_color="#FF4081"-->
+</resources>

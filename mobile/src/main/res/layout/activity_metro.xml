@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+    <Button
+        android:id="@+id/btnTranslate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:text="Translate"/>
+
+    <Button
+        android:id="@+id/btnVision"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/btnTranslate"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:text="Vision"
+        />
+
+    <Button
+        android:id="@+id/btnSyntax"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/btnVision"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:text="Syntax"
+        />
+
+</LinearLayout>

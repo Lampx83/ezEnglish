@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme.Button" parent="Base.Widget.AppCompat.Button">
+
+        <item name="colorButtonNormal">@color/mau_xanhlo</item>
+        <item name="colorControlHighlight">@color/mau_xanhlo_light</item>
+        <item name="android:textColor">@color/mau_trang</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>

@@ -1,0 +1,62 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+
+    <!--<item-->
+        <!--android:title="abc"-->
+        <!--android:icon="@drawable/icon144"-->
+        <!--app:showAsAction="ifRoom">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/menuSortNewest"-->
+                <!--android:title="Sort by newest" />-->
+            <!--<item-->
+                <!--android:id="@+id/menuSortRating"-->
+                <!--android:title="Sort by rating" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+    <item
+        android:id="@+id/action_listtranslate"
+        android:icon="@drawable/ic_history_white_2x"
+        android:orderInCategory="100"
+        android:title="@string/history"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_flashcard"
+        android:orderInCategory="101"
+        android:icon="@drawable/ic_flashcard"
+        android:title="@string/flashcards"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_summary"
+        android:orderInCategory="102"
+        android:title="@string/statistics"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_homework"
+        android:orderInCategory="102"
+        android:title="@string/homework"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="103"
+        android:icon="@drawable/ic_history_white_2x"
+        android:title="@string/settings"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="103"
+
+        android:title="@string/help"
+        app:showAsAction="never"/>
+
+
+
+</menu>

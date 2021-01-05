@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/code_ezNPL.iml" filepath="$PROJECT_DIR$/.idea/modules/code_ezNPL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ezSyntax/code_ezNPL.ezSyntax.iml" filepath="$PROJECT_DIR$/.idea/modules/ezSyntax/code_ezNPL.ezSyntax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/maplibrary/code_ezNPL.maplibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/maplibrary/code_ezNPL.maplibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mobile/code_ezNPL.mobile.iml" filepath="$PROJECT_DIR$/.idea/modules/mobile/code_ezNPL.mobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spb/code_ezNPL.spb.iml" filepath="$PROJECT_DIR$/.idea/modules/spb/code_ezNPL.spb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wear/code_ezNPL.wear.iml" filepath="$PROJECT_DIR$/.idea/modules/wear/code_ezNPL.wear.iml" />
+    </modules>
+  </component>
+</project>

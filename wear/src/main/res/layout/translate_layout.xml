@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wave="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/tvTrans"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textTag="Tap on the microphone and speak"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+            <ProgressBar
+                android:id="@+id/pb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rlWave"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <waveview.WaveView
+                android:id="@+id/wave_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="gone"
+                wave:above_wave_color="#FF4081"
+                wave:blow_wave_color="#FF4081"
+                wave:progress="100"
+                wave:wave_height="large"
+                wave:wave_hz="slow"
+                wave:wave_length="middle">
+            </waveview.WaveView>
+
+            <LinearLayout
+                android:id="@+id/llMic"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnMic"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/round_button"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:padding="6dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/mic"
+                    android:textColor="#fff"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llSpeak"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <android.support.wearable.view.CircularButton
+                    android:id="@+id/btnSpeak"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:color="@color/mau_blue"
+                    android:src="@drawable/speaker"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPractice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:weightSum="1">
+
+
+                <android.support.wearable.view.CircularButton
+                    android:id="@+id/btnPractice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:color="@color/mau_orange"
+                    android:src="@drawable/practice"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

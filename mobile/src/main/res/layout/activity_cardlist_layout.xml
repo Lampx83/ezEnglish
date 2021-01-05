@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/llMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnStudy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/game_study"
+            android:minWidth="0dp"
+            android:singleLine="true"
+            android:text="Review"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+
+        <Button
+            android:id="@+id/btnTrueFalse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/game_true_false"
+            android:singleLine="true"
+            android:text="True False"
+            android:textAllCaps="false"
+
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+
+        <Button
+            android:id="@+id/btnMultiChoice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/game_multichoice"
+            android:singleLine="true"
+            android:text="Multi Choice"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llMenu2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llMenu"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+        android:gravity="top"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnMatching"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/game_matching"
+            android:text="Matching"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+
+            />
+
+        <Button
+            android:id="@+id/btnWritten"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:drawableTop="@drawable/game_written"
+            android:text="Written"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+
+            />
+
+        <Button
+            android:id="@+id/btnMultiplayer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/game_multiplayer"
+            android:text="2 players"
+            android:textAllCaps="false"
+
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/cardList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/llMenu2">
+    </ListView>
+
+</RelativeLayout>

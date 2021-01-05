@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.jquiz.project2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!--<uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>-->
+    <!--<uses-permission android:name="com.example.permission.MAPS_RECEIVE"/>-->
+    <!--<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <!-- Samsung -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+
+    <!-- Sony -->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+
+    <!-- HTC -->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <!--<permission-->
+    <!--android:name="com.example.permission.MAPS_RECEIVE"-->
+    <!--android:protectionLevel="signature"/>-->
+    <!--<uses-permission android:name="com.example.permission.MAPS_RECEIVE"/>-->
+
+    <application
+        android:name="activity.MyApplication"
+        android:allowBackup="true"
+        >
+        <activity
+            android:name="activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="activity.MetroActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="activity.HelpActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/help"/>
+        <activity
+            android:name="activity.ViewCardActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/study"/>
+        <activity
+            android:name="activity.MatchGameActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="activity.HomeWorkActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="activity.HistoryDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="activity.TrueFalseGameActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="activity.TwoPlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="activity.MultipleChoiceGameActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="activity.WrittenGameActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="activity.CardListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity
+            android:name="activity.StatisticsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"/>
+
+
+        <activity
+            android:name="activity.HistoryActivity">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN"/>-->
+            <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity
+            android:name="activity.MapsActivity">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN"/>-->
+            <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity
+            android:name="activity.MoreInfoActivity">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN"/>-->
+            <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity
+            android:name="activity.ConfigActivity">
+        </activity>
+
+        <service android:name="pedometer.StepService"/>
+
+        <!--<service android:name="wear.ListenerService">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.google.android.gms.wearable.BIND_LISTENER"/>-->
+        <!--</intent-filter>-->
+        <!--</service>-->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
+
+
+        <!--<receiver android:name="service.SampleAlarmReceiver">-->
+        <!--</receiver>-->
+        <!--<receiver-->
+        <!--android:name="service.SampleBootReceiver"-->
+        <!--android:enabled="false">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.BOOT_COMPLETED">-->
+        <!--</action>-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--<service android:name="service.SampleSchedulingService"/>-->
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+
+</manifest>

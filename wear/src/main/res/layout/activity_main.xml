@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <android.suppoOSrt.wearable.view.GridViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"/>
+
+    <android.support.wearable.view.DotsPageIndicator
+        android:id="@+id/page_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom">
+    </android.support.wearable.view.DotsPageIndicator>
+
+    <RelativeLayout
+        android:id="@+id/rlDialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeffffff"
+        android:padding="30dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:textTag="Are you sure you want to exit?"/>
+
+        <android.support.wearable.view.CircledImageView
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/mic"
+            app:circle_color="@color/red"
+            app:circle_radius="25dp"
+            app:circle_radius_pressed="20dp"/>
+
+        <android.support.wearable.view.CircledImageView
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/practice"
+            app:circle_color="@color/green"
+            app:circle_radius="25dp"
+            app:circle_radius_pressed="20dp"/>
+
+    </RelativeLayout>
+</FrameLayout>

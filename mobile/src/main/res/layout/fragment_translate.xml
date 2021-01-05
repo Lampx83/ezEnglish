@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wave="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="#eeeeee">
+
+
+    <LinearLayout
+        android:id="@+id/llPedo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/row_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/row_spacing">
+
+            <LinearLayout
+                android:id="@+id/box_steps"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/margin">
+
+                <TextView
+                    android:id="@+id/tvStep"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/display_background"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="@dimen/padding"
+                    android:paddingRight="@dimen/padding"
+                    android:paddingTop="@dimen/padding"
+                    android:text=""
+                    android:textSize="@dimen/value"/>
+
+                <TextView
+                    android:id="@+id/step_units"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/display_background"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="@string/steps"
+                    android:textSize="@dimen/units"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/box_distance"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDistance"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/display_background"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="@dimen/padding"
+                    android:paddingRight="@dimen/padding"
+                    android:paddingTop="@dimen/padding"
+                    android:text=""
+                    android:textSize="@dimen/value"/>
+
+                <TextView
+                    android:id="@+id/distance_units"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/display_background"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="@string/meters"
+                    android:textSize="@dimen/units"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/box_calories"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin">
+
+                <TextView
+                    android:id="@+id/tvCalories"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/display_background"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="@dimen/padding"
+                    android:paddingRight="@dimen/padding"
+                    android:paddingTop="@dimen/padding"
+                    android:text=""
+                    android:textSize="@dimen/value"/>
+
+                <TextView
+                    android:id="@+id/calories_units"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/display_background"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="@string/calories_burned"
+                    android:textSize="@dimen/units"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llPedo"
+
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/llTranslate"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:background="@drawable/border_card_light">
+
+            <ScrollView
+                android:id="@+id/tags_laoyut"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/llMenu"
+                android:background="@android:color/white"
+                android:visibility="visible">
+
+                <ui.TagView
+                    android:id="@+id/tag_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/tvTrans"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/llMenu"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/tap_on_the_microphone_and_speak"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <ProgressBar
+                android:id="@+id/pb"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/img_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/llMenu"
+                android:layout_below="@+id/tvTrans"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:paddingBottom="15dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/imgKeyboard2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="8dp"
+                android:src="@drawable/keyboard_b"
+                android:visibility="invisible"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/llMenu"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+
+                <Button
+                    android:id="@+id/btnTag"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_tag_done"
+                    android:gravity="center"
+                    android:text="@string/tag"
+                    android:textAllCaps="false"
+                    android:textSize="8sp"
+                    />
+
+
+                <Button
+                    android:id="@+id/btnSpeak"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_speaker_done"
+                    android:gravity="center"
+                    android:text="@string/listen"
+                    android:textAllCaps="false"
+                    android:textSize="8sp"
+                    />
+
+
+                <Button
+                    android:id="@+id/btnPractice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/practice_done"
+                    android:gravity="center"
+                    android:text="@string/practice"
+                    android:textAllCaps="false"
+                    android:textSize="8sp"
+                    />
+
+                <Button
+                    android:id="@+id/btnCamera"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+
+                    android:drawableTop="@drawable/camera_done"
+                    android:gravity="center"
+                    android:text="@string/photo"
+                    android:textAllCaps="false"
+                    android:textSize="8sp"
+
+                    />
+
+                <Button
+                    android:id="@+id/btnNote"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+
+                    android:drawableTop="@drawable/note_done"
+                    android:gravity="center"
+                    android:text="@string/note"
+                    android:textAllCaps="false"
+                    android:textSize="8sp"
+
+                    />
+
+                <Button
+                    android:id="@+id/btnMark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/mark_done"
+                    android:gravity="center"
+                    android:text="@string/flashcard"
+                    android:textAllCaps="false"
+                    android:textSize="8sp"
+
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_card_e">
+
+            <waveview.WaveView
+                android:id="@+id/waveView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="visible"
+
+                wave:above_wave_color="@color/colorAccent"
+                wave:blow_wave_color="@color/colorAccent"
+                wave:progress="100"
+                wave:wave_height="large"
+                wave:wave_hz="slow"
+                wave:wave_length="large">
+            </waveview.WaveView>
+
+
+            <ImageView
+                android:id="@+id/img_card2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:padding="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tvText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff"
+                />
+
+            <ImageView
+                android:id="@+id/btnMicro"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_pen"/>
+
+            <ImageView
+                android:id="@+id/imgKeyboard1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="8dp"
+                android:src="@drawable/keyboard_w"/>
+
+            <ToggleButton
+                android:id="@+id/tbLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="#00000000"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPinkLight"
+                android:textOff="@string/lang_off"
+                android:textOn="@string/lang_on"/>
+
+
+            <Spinner
+                android:id="@+id/spLangSyntax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:entries="@array/langSyntax"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

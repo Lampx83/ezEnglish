@@ -1,0 +1,148 @@
+<resources>
+    <string-array name="language">
+        <item>English</item>
+        <item>中文</item>
+    </string-array>
+
+    <!--Main screen-->
+    <string name="language">語言</string>
+    <string name="steps">步數</string>
+    <string name="meters">距離(公尺)</string>
+    <string name="calories_burned">消耗熱量(卡路里)</string>
+    <string name="tap_on_the_microphone_and_speak">Tap on the camera icon to start</string>
+    <string name="lang_off">現在語言: 中文</string>
+    <string name="lang_on">現在語言: English</string>
+    <string name="history">練習紀錄</string>
+    <string name="please_try_speaking_again">請再試一次</string>
+    <string name="please_check_your_internet_connection">請檢查你的網路連線!</string>
+    <string name="wrong">錯誤</string>
+    <string name="correct">正確</string>
+    <string name="no_matches_found">沒有合適的翻譯結果</string>
+    <string name="please_repeat">請跟著重複念一次</string>
+    <string name="score">您的分數</string>
+    <string name="enter_your_name">請輸入您的名稱:</string>
+    <string name="name_cannot_be_blank">名稱不可以是空白！</string>
+    <string name="flashcards">字卡複習</string>
+    <string name="show_original_text_first">先顯示未翻譯卡面</string>
+    <string name="show_translated_text_first">先顯示翻譯過的卡面</string>
+    <string name="start">開始</string>
+    <string name="listening">正在聆聽您的語音內容...</string>
+    <string name="recognizing">辨識中...</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">取消</string>
+    <string name="type_text">請輸入文字</string>   <!--I'm not sure your means in this word, please tell me-->
+    <string name="edit">編輯</string>
+    <string name="hi">Hi</string>
+    <string name="help">幫助</string>
+    <string name="flashcard">存成字卡</string>
+    <string name="note">加入註記</string>
+    <string name="photo">拍照</string>
+    <string name="practice">再次練習</string>
+    <string name="listen">聆聽語音</string>
+
+    <!--Maps screen-->
+    <string name="maps">地圖</string>
+    <string name="grouped">歸納</string>   <!--I'm not sure your means in this word, please tell me-->
+    <string name="items">其他物件</string>
+
+    <!--History screen-->
+    <string name="view_shared">查看已分享的字卡</string>
+    <string name="detail">詳細內容</string>
+    <string name="translated">翻譯紀錄</string>
+    <string name="pedometer">計步器資訊</string>
+    <string name="are_you_sure_you_want_to_delete">確定要清除紀錄?</string>
+
+    <!--Flashcard screen-->
+    <string name="study">字卡練習</string>
+    <string name="game_matching">(小遊戲) 紅白配對</string>
+    <string name="game_true_false">(小遊戲) 判斷對或錯</string>
+    <string name="game_multichoice">(小遊戲) 選擇正確的選項</string>
+    <string name="game_written">(小遊戲) 寫出中文或英文</string>
+    <string name="game_multiplayer">(小遊戲) 雙人搶答</string>
+    <string name="all_your_flashcard">我的字卡清單一覽</string>
+    <string name="you_dont_have_any_flashcard">你還沒有任何字卡</string>
+    <string name="shuffle">將字卡重新洗牌</string>
+    <string name="got_it">我記住了！</string>
+    <string name="missed">我可能忘記</string>
+    <string name="life">剩餘機會</string>
+    <string name="answer">回答</string>
+    <string name="tut_multiplayer1">請「搶答」接下來的</string>
+    <string name="tut_multiplayer2">個「對或錯」問題。如果你答對你就會得到該題的分數，答錯或速度較慢則此題分數將由對手拿下。</string>
+    <string name="lets_go">開始！</string>
+    <string name="true_">對</string>
+    <string name="false_">錯</string>
+    <string name="game_over">遊戲結束</string>
+    <string name="try_again">再玩一次</string>
+    <string name="often_missed">常常會忘記的</string>
+    <string name="sometimes_missed">偶爾會忘記的</string>
+    <string name="seldom_missed">極少會忘記的</string>
+    <string name="never_missed">從不會忘記的</string>
+    <string name="no_answer_yet">尚未練習過的</string>
+    <string name="tap_to_continue">點一下以繼續</string>
+    <string name="need_4_flashcard">你至少需要擁有 4 個字卡才能進行本遊戲</string>
+    <string name="need_2_flashcard">你至少需要擁有 2 個字卡才能進行本遊戲</string>
+    <string name="need_1_flashcard">你至少需要擁有 1 個字卡才能進行本遊戲</string>
+
+    <!--Homework screen-->
+    <string name="homework">作業</string>
+    <string name="record">錄製</string>
+    <string name="play">播放</string>
+    <string name="stop">停止</string>
+    <string name="uploading">上傳作業中...</string>
+    <string name="select_words">選出單字</string>
+    <string name="pretest">前測</string>
+    <string name="posttest">後測</string>
+
+    <!--Settings screen-->
+    <string name="settings">設定</string>
+    <string name="translate">翻譯功能</string>
+    <string name="auto">自動</string>
+    <string name="enable_pedometer">計步器資訊</string>
+    <string name="your_name">你的名稱:</string>
+
+    <!--More info screen-->
+    <string name="more_info">詳細資訊</string>
+    <string name="delete">刪除紀錄</string>
+    <string name="created_location">翻譯時的位置:</string>
+    <string name="downloading">下載中...</string>
+    <string name="topic">分類</string>
+    <string name="listened">聆聽次數:</string>
+    <string name="times">次</string>
+    <string name="highest_score">練習最高分:</string>
+    <string name="practiced">練習次數</string>
+    <string name="created_by">練習者:</string>
+    <string name="you">我自己</string> <!--you in the sentence: Created by: you-->
+    <string name="created_time">練習時的時間:</string>
+    <string name="no_location_data">沒有位置資訊</string>
+
+    <!--Statistics screen-->
+    <string name="statistics">統計</string>
+    <string name="average_score">average score</string>
+    <string name="completed">已完成</string>
+    <string name="uncompleted">未完成</string>
+
+    <string name="noted">已註記</string>
+    <string name="taken">已進行</string>
+    <string name="collected">已收集</string>
+    <string name="taken_found">已拍攝</string>
+    <string name="photo_s">張照片</string>
+    <string name="note_s">次註記</string>
+    <string name="flashcard_s">個字卡</string>
+    <string name="reviewed">已複習</string>
+    <string name="played">已遊玩</string>
+    <string name="looked_up">已查閱</string>
+    <string name="searched_photo">已搜尋相關圖片</string>
+
+    <string name="english_chinese_dictionary">英漢辭典</string>
+    <string name="chinese_english_dictionary">漢英辭典</string>
+    <string name="english_english_dictionary">英英辭典</string>
+
+    <string name="dialog_select_prompt">Choose a picture</string>
+    <string name="dialog_select_camera">Camera</string>
+    <string name="dialog_select_gallery">Gallery</string>
+    <string name="image_picker_error">Something is wrong with that image. Pick a different one please.</string>
+    <string name="image_details_header">Details:</string>
+    <string name="image_preview_header">Preview:</string>
+    <string name="loading_message">Uploading image. Please wait.</string>
+
+</resources>

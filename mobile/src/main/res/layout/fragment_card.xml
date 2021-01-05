@@ -1,0 +1,232 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#eee"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTip1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:gravity="center"
+        android:text="Tap the card to flip from front to back"
+        android:visibility="invisible"/>
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.8">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_card_light_pink">
+
+
+            <TextView
+                android:id="@+id/tvTerm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/mau_trang"/>
+
+            <ImageView
+                android:id="@+id/btnFlip2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/btnflip_l"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_card_light">
+
+
+            <TextView
+                android:id="@+id/tvDef"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/llMenu"
+                android:layout_below="@+id/tvDef"
+                android:paddingBottom="15dp">
+
+
+                <ImageView
+                    android:id="@+id/img_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+
+                    android:visibility="gone"/>
+
+                <ProgressBar
+                    android:id="@+id/pb"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/btnFlip1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/btnflip"/>
+
+            <LinearLayout
+                android:id="@+id/llMenu"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btnSpeak"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/speaker_done"
+                    android:gravity="center"
+                    android:text="@string/listen"
+                    android:textAllCaps="false"
+                    android:textSize="8sp"
+                    />
+
+
+                <Button
+                    android:id="@+id/btnPractice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/practice_done"
+                    android:gravity="center"
+                    android:text="@string/practice"
+                    android:textAllCaps="false"
+                    android:textSize="8sp"
+                    />
+
+                <Button
+                    android:id="@+id/btnCamera"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+
+                    android:drawableTop="@drawable/camera_done"
+                    android:gravity="center"
+                    android:text="@string/photo"
+                    android:textAllCaps="false"
+                    android:textSize="8sp"
+
+                    />
+
+                <Button
+                    android:id="@+id/btnNote"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+
+                    android:drawableTop="@drawable/note_done"
+                    android:gravity="center"
+                    android:text="@string/note"
+                    android:textAllCaps="false"
+                    android:textSize="8sp"
+
+                    />
+
+                <Button
+                    android:id="@+id/btnMark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/mark_done"
+                    android:gravity="center"
+                    android:text="@string/flashcard"
+                    android:textAllCaps="false"
+                    android:textSize="8sp"
+
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+    </ViewFlipper>
+
+    <TextView
+        android:id="@+id/tvTip2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:gravity="center"
+        android:text="Swipe LEFT for the next flashcard"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:id="@+id/rlFooter"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:background="@color/mau_xanhlo">
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/mau_xanhlo"
+            android:gravity="center"
+            android:textColor="#ffffff"/>
+
+        <LinearLayout
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCorrect"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_small_gray"
+                android:text="@string/got_it"/>
+
+            <Button
+                android:id="@+id/btnWrong"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_small_gray"
+                android:text="@string/missed"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

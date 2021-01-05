@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="6dp"
+                android:src="@drawable/stranslate"
+                />
+
+            <TextView
+                android:id="@+id/tvTranslated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            >
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="6dp"
+                android:src="@drawable/speaker_done"
+                />
+
+            <TextView
+                android:id="@+id/tvListen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="6dp"
+                android:src="@drawable/practice_done"/>
+
+            <TextView
+                android:id="@+id/tvPractice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            >
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="6dp"
+                android:src="@drawable/camera_done"
+
+                />
+
+            <TextView
+                android:id="@+id/tvPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="6dp"
+                android:src="@drawable/note_done"/>
+
+            <TextView
+                android:id="@+id/tvNote"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="6dp"
+                android:src="@drawable/mark_done"
+                />
+
+            <TextView
+                android:id="@+id/tvFlashcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="6dp"
+                android:src="@drawable/game_study"
+                />
+
+            <TextView
+                android:id="@+id/tvStudy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="6dp"
+                android:src="@drawable/game_true_false"
+                />
+
+            <TextView
+                android:id="@+id/tvTrueFalse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="6dp"
+                android:src="@drawable/game_multichoice"
+                />
+
+            <TextView
+                android:id="@+id/tvMultichoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="6dp"
+                android:src="@drawable/game_matching"
+                />
+
+            <TextView
+                android:id="@+id/tvMatching"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="6dp"
+                android:src="@drawable/game_written"
+                />
+
+            <TextView
+                android:id="@+id/tvWritten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="6dp"
+                android:src="@drawable/game_multiplayer"
+                />
+
+            <TextView
+                android:id="@+id/tv2Player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="6dp"
+                android:src="@drawable/senglish_chinese"
+                />
+
+            <TextView
+                android:id="@+id/tvEnglish_chinese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="6dp"
+                android:src="@drawable/schinese_english"
+                />
+
+            <TextView
+                android:id="@+id/tvChinese_english"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="6dp"
+                android:src="@drawable/senglish_english"
+                />
+
+            <TextView
+                android:id="@+id/tvEnglish_english"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="6dp"
+                android:src="@drawable/simage_search"
+                />
+
+            <TextView
+                android:id="@+id/tvImage_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+
+            <TextView
+                android:id="@+id/tvHomework"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
